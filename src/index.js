@@ -6,8 +6,19 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom";
 //import redux components
 import { Provider } from 'react-redux';
-import store from './Redux/store';
+import {createStore,combineReducers} from 'redux';
+import counterReducer from './Redux/reducers/counterReducer';
+import isLoggedReducer from './Redux/reducers/isLogged';
+import allReducers from './Redux/reducers';
+import configureStore from './Redux/store';
+
+//import store from './Redux/store';
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+//store=>globalized state
+const store=configureStore();
+
+
 root.render(
   <Provider store={store}>
   <BrowserRouter>
