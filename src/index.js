@@ -11,12 +11,11 @@ import counterReducer from './Redux/reducers/counterReducer';
 import isLoggedReducer from './Redux/reducers/isLogged';
 import allReducers from './Redux/reducers';
 import configureStore from './Redux/store';
-
+import store from './Redux/store';
 //import store from './Redux/store';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 //store=>globalized state
-const store=configureStore();
 
 
 root.render(

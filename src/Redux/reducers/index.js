@@ -11,6 +11,5 @@ const allReducers=combineReducers({
     counter:counterReducer,
     logged:isLoggedReducer,
     click:clickReducer,
-    transcribe:transcribeReducer
 })
 export default allReducers;

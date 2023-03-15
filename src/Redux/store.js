@@ -1,11 +1,13 @@
-import {createStore, applyMiddleware} from 'redux';  
+import { applyMiddleware, configureStore } from '@reduxjs/toolkit'
 import allReducers from './reducers';
 import thunk from 'redux-thunk';
-import transcriptionSlice from './slices/transcriptionSlice';
+import textInputSlice from './slices/textInputSlice';
+import voiceInputSlice from './slices/voiceInputSlice';
+export default configureStore({
+  reducer: {
+    msg:textInputSlice,
+    voiceMsg:voiceInputSlice
 
-export default function configureStore() {  
-  return createStore(
-    transcriptionSlice,
-    applyMiddleware(thunk)
-  );
-}
+  }
+}) 
+  

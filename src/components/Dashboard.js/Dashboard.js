@@ -4,7 +4,7 @@ import Client from '../../client/client';
 import { resetClick } from '../../Redux/actions';
 
 function Dashboard() {
-  /*const refs = useRef({primaryRef:null,successRef:null,dangerRef:null});
+ /* const refs = useRef({primaryRef:null,successRef:null,dangerRef:null});
   const clicked=useSelector(state=>state.click.clicked)
   const btn=useSelector(state=>state.click.btn)
   const dispatch=useDispatch();
@@ -44,10 +44,10 @@ function Dashboard() {
 
 </>
      
-  );*/
+  );
   return(<>
   <Client></Client>
-  </>)
+  </>)*/
 }
 
 export default Dashboard;
